@@ -12,9 +12,9 @@ elif process == "-":
     print("{} - {} = {}".format(a,b,a-b))
 elif process == "*":
     print("{} * {} = {}".format(a,b,a*b))
-if process == "/" and b !=0:
+elif process == "/" and b !=0:
     print("{} / {} = {}".format(a,b,a/b))
-elif b == 0:
+elif process == "/" and b==0:
     print("division-by-zero error")
-else:
+elif not process == "+" or "-" or "*" or "/":
     print("ERROR")
